@@ -23,13 +23,6 @@
   </url>
   
   <url>
-    <loc>https://tony-greel.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-07-30T18:55:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tony-greel.github.io/links/index.html</loc>
     
     <lastmod>2018-07-30T18:55:52.000Z</lastmod>
@@ -37,7 +30,7 @@
   </url>
   
   <url>
-    <loc>https://tony-greel.github.io/tags/index.html</loc>
+    <loc>https://tony-greel.github.io/categories/index.html</loc>
     
     <lastmod>2018-07-30T18:55:52.000Z</lastmod>
     
@@ -45,6 +38,13 @@
   
   <url>
     <loc>https://tony-greel.github.io/repository/index.html</loc>
+    
+    <lastmod>2018-07-30T18:55:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tony-greel.github.io/tags/index.html</loc>
     
     <lastmod>2018-07-30T18:55:52.000Z</lastmod>
     
