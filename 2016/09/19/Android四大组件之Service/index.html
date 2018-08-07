@@ -17,20 +17,27 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hexo常用命令 | James·Li</title>
-  <meta name="description" content="1.新建一个网站，如果没有指定路径的文件夹，那么将会在默认路径下面建立网站，在建立的时候可以看到地址,[folder]可以随意命名，如：blog $ hexo init [folder]      2.创建一篇文章，[layout]为博客文章布局，可以设置为下面三种布局之一 title 随意取名，会作为你的文章的文件的名字，同时也会作为文章标题，可以在里面修改，不一定要一致 · post&amp;nbsp">
+  <title>Android随笔-Service | James·Li</title>
+  <meta name="description" content="1.Service作用： 提供需要长期在后台长期运行的服务（如复杂计算、下载等），主要是因为它没有长的生命周期、没有用户界面、在后台运行。  2.Service分类： 本地：运行在主线程，主线程终止后服务也会终止。但是能够节约资源，并且通信方便，由于在同一进程不需要IPC和AIDL，主要使用在需要依附某个进程的服务，音乐播放等。远程：运行在独立进程，常驻在后台，不受其他Activity影响但是非">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo常用命令">
-<meta property="og:url" content="https://tony-greel.github.io/2016/09/04/hexo常用命令/index.html">
+<meta property="og:title" content="Android随笔-Service">
+<meta property="og:url" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/index.html">
 <meta property="og:site_name" content="Hexo45">
-<meta property="og:description" content="1.新建一个网站，如果没有指定路径的文件夹，那么将会在默认路径下面建立网站，在建立的时候可以看到地址,[folder]可以随意命名，如：blog $ hexo init [folder]      2.创建一篇文章，[layout]为博客文章布局，可以设置为下面三种布局之一 title 随意取名，会作为你的文章的文件的名字，同时也会作为文章标题，可以在里面修改，不一定要一致 · post&amp;nbsp">
+<meta property="og:description" content="1.Service作用： 提供需要长期在后台长期运行的服务（如复杂计算、下载等），主要是因为它没有长的生命周期、没有用户界面、在后台运行。  2.Service分类： 本地：运行在主线程，主线程终止后服务也会终止。但是能够节约资源，并且通信方便，由于在同一进程不需要IPC和AIDL，主要使用在需要依附某个进程的服务，音乐播放等。远程：运行在独立进程，常驻在后台，不受其他Activity影响但是非">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-06T08:10:13.411Z">
+<meta property="og:image" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/1.png">
+<meta property="og:image" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/2.png">
+<meta property="og:image" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/3.png">
+<meta property="og:image" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/4.png">
+<meta property="og:image" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/5.png">
+<meta property="og:image" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/6.png">
+<meta property="og:updated_time" content="2018-08-07T09:03:41.374Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo常用命令">
-<meta name="twitter:description" content="1.新建一个网站，如果没有指定路径的文件夹，那么将会在默认路径下面建立网站，在建立的时候可以看到地址,[folder]可以随意命名，如：blog $ hexo init [folder]      2.创建一篇文章，[layout]为博客文章布局，可以设置为下面三种布局之一 title 随意取名，会作为你的文章的文件的名字，同时也会作为文章标题，可以在里面修改，不一定要一致 · post&amp;nbsp">
+<meta name="twitter:title" content="Android随笔-Service">
+<meta name="twitter:description" content="1.Service作用： 提供需要长期在后台长期运行的服务（如复杂计算、下载等），主要是因为它没有长的生命周期、没有用户界面、在后台运行。  2.Service分类： 本地：运行在主线程，主线程终止后服务也会终止。但是能够节约资源，并且通信方便，由于在同一进程不需要IPC和AIDL，主要使用在需要依附某个进程的服务，音乐播放等。远程：运行在独立进程，常驻在后台，不受其他Activity影响但是非">
+<meta name="twitter:image" content="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/1.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://tony-greel.github.io/2016/09/04/hexo常用命令/index.html">
+  <link rel="canonical" href="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo45" type="application/atom+xml">
   
@@ -298,14 +305,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-hexo常用命令" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Android四大组件之Service" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo常用命令
+      Android随笔-Service
     </h1>
   
 
@@ -313,69 +320,54 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2016/09/04/hexo常用命令/" class="article-date">
-	  <time datetime="2016-09-04T08:25:04.000Z" itemprop="datePublished">2016-09-04</time>
+	<a href="/2016/09/19/Android四大组件之Service/" class="article-date">
+	  <time datetime="2016-09-19T02:58:12.000Z" itemprop="datePublished">2016-09-19</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+    <a class="article-category-link" href="/categories/Android随笔/">Android随笔</a>
   </span>
 
         
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2016/09/04/hexo常用命令/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2016/09/19/Android四大组件之Service/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 426(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 776(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3(分)</span>
 	
 
       </div>
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <h4 id="1-新建一个网站，如果没有指定路径的文件夹，那么将会在默认路径下面建立网站，在建立的时候可以看到地址-folder-可以随意命名，如：blog"><a href="#1-新建一个网站，如果没有指定路径的文件夹，那么将会在默认路径下面建立网站，在建立的时候可以看到地址-folder-可以随意命名，如：blog" class="headerlink" title="1.新建一个网站，如果没有指定路径的文件夹，那么将会在默认路径下面建立网站，在建立的时候可以看到地址,[folder]可以随意命名，如：blog"></a>1.新建一个网站，如果没有指定路径的文件夹，那么将会在默认路径下面建立网站，在建立的时候可以看到地址,[folder]可以随意命名，如：blog</h4><blockquote>
-<p>$ hexo init [folder]   </p>
-</blockquote>
-<p><br><br></p>
-<h4 id="2-创建一篇文章，-layout-为博客文章布局，可以设置为下面三种布局之一-title-随意取名，会作为你的文章的文件的名字，同时也会作为文章标题，可以在里面修改，不一定要一致"><a href="#2-创建一篇文章，-layout-为博客文章布局，可以设置为下面三种布局之一-title-随意取名，会作为你的文章的文件的名字，同时也会作为文章标题，可以在里面修改，不一定要一致" class="headerlink" title="2.创建一篇文章，[layout]为博客文章布局，可以设置为下面三种布局之一 title 随意取名，会作为你的文章的文件的名字，同时也会作为文章标题，可以在里面修改，不一定要一致"></a>2.创建一篇文章，[layout]为博客文章布局，可以设置为下面三种布局之一 title 随意取名，会作为你的文章的文件的名字，同时也会作为文章标题，可以在里面修改，不一定要一致</h4><ul>
-<li><h5 id="·-post-nbsp-nbsp-我一般都用post，默认就是这个"><a href="#·-post-nbsp-nbsp-我一般都用post，默认就是这个" class="headerlink" title="· post&nbsp;&nbsp;我一般都用post，默认就是这个"></a>· post&nbsp;&nbsp;我一般都用post，默认就是这个</h5></li>
-<li><h5 id="·-page"><a href="#·-page" class="headerlink" title="· page"></a>· page</h5></li>
-<li><h5 id="·-draft"><a href="#·-draft" class="headerlink" title="· draft"></a>· draft</h5></li>
-</ul>
+        <blockquote>
+<h4 id="1-Service作用："><a href="#1-Service作用：" class="headerlink" title="1.Service作用："></a>1.Service作用：</h4></blockquote>
+<p>提供需要长期在后台长期运行的服务（如复杂计算、下载等），主要是因为它没有长的生命周期、没有用户界面、在后台运行。</p>
 <blockquote>
-<p>$ hexo new [layout] <title></title></p>
-</blockquote>
-<hr>
-<p>文章建立之后，在你的网站文件夹中<span style="color:#ff0000"> <strong>\source\_posts</strong> </span> 路径下面可以找到创建的文章文件，是 <strong>markdown</strong> 格式的，文件后缀名为 <strong>.md</strong>, <strong>Front-matter</strong> 是文件最上方以 — 分隔的区域，用于指定个别文件的变量,以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
-<ul>
-<li><strong>·</strong> layout 布局</li>
-<li><strong>·</strong> title 标题</li>
-<li><strong>·</strong> date 建立日期</li>
-<li><strong>·</strong> updated 更新日期</li>
-<li><strong>·</strong> comments 开启文章的评论功能</li>
-<li><strong>·</strong> tags 标签</li>
-<li><strong>·</strong> categories 分类</li>
-<li><strong>·</strong> permalink 覆盖文章网址<br><br><br><h4 id="3-将更改上传到github-每次更新完博客输入这条命令，就能将文章跟新到博客了"><a href="#3-将更改上传到github-每次更新完博客输入这条命令，就能将文章跟新到博客了" class="headerlink" title="3. 将更改上传到github,每次更新完博客输入这条命令，就能将文章跟新到博客了"></a>3. 将更改上传到github,每次更新完博客输入这条命令，就能将文章跟新到博客了</h4><blockquote>
-<p>$ hexo g -d</p>
-</blockquote>
-</li>
-</ul>
-<p><br><br></p>
-<h4 id="4-启动本地服务-可以在写完文章后查看效果"><a href="#4-启动本地服务-可以在写完文章后查看效果" class="headerlink" title="4.启动本地服务,可以在写完文章后查看效果"></a>4.启动本地服务,可以在写完文章后查看效果</h4><blockquote>
-<p>$ hexo s</p>
-</blockquote>
-<p><br><br></p>
-<h4 id="5-有时候博客写完，上传giehub无效果，那么试试清除缓存"><a href="#5-有时候博客写完，上传giehub无效果，那么试试清除缓存" class="headerlink" title="5.有时候博客写完，上传giehub无效果，那么试试清除缓存"></a>5.有时候博客写完，上传giehub无效果，那么试试清除缓存</h4><blockquote>
-<p>$ hexo clean</p>
-</blockquote>
-<p><br><br><br>基本的hexo编写博客的使用就到这里了，使用上面几条命令就能够创建编写上传你的文章到博客去。其他的一些操作可以去hexo官网查看官方文档<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">HEXO官方文档</a> </p>
+<h4 id="2-Service分类："><a href="#2-Service分类：" class="headerlink" title="2.Service分类："></a>2.Service分类：</h4></blockquote>
+<p><strong>本地</strong>：运行在主线程，主线程终止后服务也会终止。但是能够节约资源，并且通信方便，由于在同一进程不需要IPC和AIDL，主要使用在需要依附某个进程的服务，音乐播放等。<br><strong>远程</strong>：运行在独立进程，常驻在后台，不受其他Activity影响但是非常消耗资源，通讯需要比较复杂，主要使用在系统级别的服务。<br><strong>前台</strong>：通知栏可以显示出来，用户可以看到，主要使用在需要让用户只要并进行相关操作，如音乐播放。<br><strong>后台</strong>：主要是用户无法看到，主要使用在不需要让用户知道的一些操作，跟新数据，同步数据等</p>
+<blockquote>
+<h4 id="3-生命周期"><a href="#3-生命周期" class="headerlink" title="3.生命周期"></a>3.生命周期</h4></blockquote>
+<p><strong>·</strong> 如果Service是第一次启动先会执行 <strong>onCreate(),onStartCommand()</strong><br><strong>·</strong> 当次启动Service调用，将只执行<strong>onStartCommand()</strong>，因为此时Service已经创建了，无需执行<strong>onCreate()</strong>回调。无论多少次的启动Service，只需要一次<strong>stopService()</strong>即可将此Service终止，执行<strong>onDestroy()</strong>函数。<br><strong>· onStartCommand(..)</strong>可以多次被调用，<strong>onDestroy()与onCreate()</strong>相匹配，当用户强制kill掉进程时，<strong>onDestroy()</strong>是不会执行的。<br><strong>· startService(Intent serviceIntent)</strong>，其中的intent既可以是显式Intent，也可以是隐式Intent，当Client与Service同处于一个App时，一般推荐使用显示Intent。当处于不同App时，只能使用隐式Intent。<br><strong>·</strong> 当Service需要运行在单独的进程中，<strong>AndroidManifest.xml</strong>声明时需要通过<strong>android:process</strong>指明此进程名称，当此Service需要对其他App开放时，<strong>android:exported</strong>属性值需要设置为true.</p>
+<blockquote>
+<h4 id="4-通讯"><a href="#4-通讯" class="headerlink" title="4.通讯"></a>4.通讯</h4></blockquote>
+<ol>
+<li>简单通信<br>直接通过Intent进行传值，我们在启动一个Service的时候通过Intent的对象向Service进行传值，这种方式传递值比较不方便，性能不是很高。<br>传值：<br><br><center><img src="/2016/09/19/Android四大组件之Service/1.png"></center><br><br>获取值：<br><br><center><img src="/2016/09/19/Android四大组件之Service/2.png"></center><br></li>
+</ol>
+<p>2．绑定服务传输数据<br>    在Service中编写Binder的内部类，自定义方法进行数据传输。<br>活动类：<br><br><center><img src="/2016/09/19/Android四大组件之Service/3.png"></center><br><br>服务类：<br><br><center><img src="/2016/09/19/Android四大组件之Service/4.png"></center><br></p>
+<ol start="3">
+<li>通过使用Messenger方式（可以在不同进程间通讯）<br>服务端：<br><br><center><img src="/2016/09/19/Android四大组件之Service/5.png"></center><br><br>客户端<br><br><center><img src="/2016/09/19/Android四大组件之Service/6.png"></center><br></li>
+</ol>
+<blockquote>
+<h4 id="5-服务单独运行在进程"><a href="#5-服务单独运行在进程" class="headerlink" title="5.服务单独运行在进程"></a>5.服务单独运行在进程</h4></blockquote>
+<p>在XML文件中给Service添加process属性，有两种赋值方式，一种是[:xxxxx],一种是[com.pw.xxx.xxx]  第一种赋值是一种简写，完整的写法是[com.xxx.xxx:xxxx]这样的进程是应用的私有进程，其他应用不会跟它跑到同一个地方去。而第二种就是一种全局进程，其他的应用程序可以通过ShareUID跑进去。<br>多进程的使用地方，可以使用在一些需要保活的地方，音乐后台播放，在退出activity后还能继续播放、加载大图、推送服务，能够在程序退出后继续的向用户推送东西。将功能独立的分开来，减少程序崩溃</p>
 
       
     </div>
@@ -385,7 +377,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://tony-greel.github.io/2016/09/04/hexo常用命令/" title="Hexo常用命令" target="_blank" rel="external">https://tony-greel.github.io/2016/09/04/hexo常用命令/</a>
+      <a href="https://tony-greel.github.io/2016/09/19/Android四大组件之Service/" title="Android随笔-Service" target="_blank" rel="external">https://tony-greel.github.io/2016/09/19/Android四大组件之Service/</a>
     </li>
     
     
@@ -433,12 +425,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2016/09/19/Android四大组件之Service/" title="Android随笔-Service"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2016/09/26/Android侧滑布局-DrawerLayout/" title="Android随笔-侧拉框:DrawerLayout"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2016/07/07/Android随笔-Fragment/" title="Android随笔-Fragment"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2016/09/04/hexo常用命令/" title="Hexo常用命令"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

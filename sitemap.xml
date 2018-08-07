@@ -2,16 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tony-greel.github.io/repository/index.html</loc>
+    <loc>https://tony-greel.github.io/2016/07/07/Android%E9%9A%8F%E7%AC%94-Fragment/</loc>
     
-    <lastmod>2018-08-07T00:14:38.663Z</lastmod>
+    <lastmod>2018-08-07T12:46:18.083Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tony-greel.github.io/2016/09/26/Android%E4%BE%A7%E6%BB%91%E5%B8%83%E5%B1%80-DrawerLayout/</loc>
+    
+    <lastmod>2018-08-07T12:22:57.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tony-greel.github.io/links/index.html</loc>
+    
+    <lastmod>2018-08-07T11:15:47.090Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tony-greel.github.io/2017/08/06/Api/</loc>
+    
+    <lastmod>2018-08-07T09:04:28.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tony-greel.github.io/2016/09/19/Android%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService/</loc>
+    
+    <lastmod>2018-08-07T09:03:41.374Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://tony-greel.github.io/about/index.html</loc>
     
-    <lastmod>2018-08-06T13:02:20.482Z</lastmod>
+    <lastmod>2018-08-07T03:57:36.103Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tony-greel.github.io/repository/index.html</loc>
+    
+    <lastmod>2018-08-07T00:14:38.663Z</lastmod>
     
   </url>
   
@@ -31,13 +66,6 @@
   
   <url>
     <loc>https://tony-greel.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-07-30T18:55:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tony-greel.github.io/links/index.html</loc>
     
     <lastmod>2018-07-30T18:55:52.000Z</lastmod>
     
