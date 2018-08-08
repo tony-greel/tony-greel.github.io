@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tony-greel.github.io/"/>
-  <updated>2018-08-08T02:51:04.650Z</updated>
+  <updated>2018-08-08T02:58:32.372Z</updated>
   <id>https://tony-greel.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://tony-greel.github.io/2018/08/08/Android%E9%9A%8F%E7%AC%94-%E5%A6%82%E4%BD%95%E5%9C%A8%E5%AD%90%E7%BA%BF%E7%A8%8B%E4%B8%AD%E6%9B%B4%E6%96%B0UI/"/>
     <id>https://tony-greel.github.io/2018/08/08/Android随笔-如何在子线程中更新UI/</id>
     <published>2018-08-08T01:27:16.000Z</published>
-    <updated>2018-08-08T02:51:04.650Z</updated>
+    <updated>2018-08-08T02:58:32.372Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><h4 id="一-前言："><a href="#一-前言：" class="headerlink" title="一.前言："></a>一.前言：</h4><p>项目开发中会涉及到一些耗时操作，这个时候就会开启一个子线程，将耗时操作放到子线程中取操作，操作完毕后，往往还要同步更新ui，这个时候如果直接在子线程中更新ui，将会导致程序的闪退，同时还会看到如下报错</p></blockquote><p><strong>android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.</strong><br>意思是：只有创建视图层次结构的原始线程才能触及它的视图，其实说白了就是在子线程不能做更新UI的操作。</p><blockquote><h4 id="二-解决方法："><a href="#二-解决方法：" class="headerlink" title="二.解决方法："></a>二.解决方法：</h4><ul><li>第一种方式 : runOnUiThread</li><li>第二种方式 : view.post();</li><li>第三种方式 : Handler.post();</li></ul></blockquote><blockquote><p><strong>第一种方式 : runOnUiThread </strong><br><br><center><img src="/2018/08/08/Android随笔-如何在子线程中更新UI/toupdate.png"></center><br></p></blockquote><blockquote><p><strong>第二种方式 : view.post(); </strong><br><br><center><img src="/2018/08/08/Android随笔-如何在子线程中更新UI/toupdate_1.png"></center><br></p></blockquote><blockquote><p><strong>第三种方式 : Handler.post(); </strong><br><br><center><img src="/2018/08/08/Android随笔-如何在子线程中更新UI/toupdate_2.png"></center><br></p></blockquote><blockquote><h4 id="三-总结："><a href="#三-总结：" class="headerlink" title="三.总结："></a>三.总结：</h4><p>一上就是我对Android如何在子线程中的总结出的几个方法，如有更好的方式，欢迎加我QQ:1123600675，大家一起沟通探讨一起学习！！</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><h4 id="一-前言："><a href="#一-前言：" class="headerlink" title="一.前言："></a>一.前言：</h4><p>项目开发中会涉及到一些耗时操作，这个时候就会开启一个子线程，将耗时操作放到子线程中取操作，操作完毕后，往往还要同步更新ui，这个时候如果直接在子线程中更新ui，将会导致程序的闪退，同时还会看到如下报错</p></blockquote><p><strong>android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.</strong><br>意思是：只有创建视图层次结构的原始线程才能触及它的视图，其实说白了就是在子线程不能做更新UI的操作。</p><blockquote><h4 id="二-解决方法："><a href="#二-解决方法：" class="headerlink" title="二.解决方法："></a>二.解决方法：</h4><ul><li>第一种方式 : runOnUiThread</li><li>第二种方式 : view.post();</li><li>第三种方式 : Handler.post();</li></ul></blockquote><blockquote><p><strong>第一种方式 : runOnUiThread </strong><br><br><center><img src="/2018/08/08/Android随笔-如何在子线程中更新UI/toupdate.png"></center><br></p></blockquote><blockquote><p><strong>第二种方式 : view.post(); </strong><br><br><center><img src="/2018/08/08/Android随笔-如何在子线程中更新UI/toupdate_1.png"></center><br></p></blockquote><blockquote><p><strong>第三种方式 : Handler.post(); </strong><br><br><center><img src="/2018/08/08/Android随笔-如何在子线程中更新UI/toupdate_2.png"></center><br></p></blockquote><blockquote><h4 id="三-总结："><a href="#三-总结：" class="headerlink" title="三.总结："></a>三.总结：</h4><p>以上就是我对如何在Android子线程中更新UI总结出的几个方法，如有更好的方式，欢迎加我QQ:1123600675，大家一起沟通探讨一起学习！！</p></blockquote>]]></content>
     
     <summary type="html">
     
