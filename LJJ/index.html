@@ -1,0 +1,88 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>成绩查询 - 中国教育考试网</title>
+        <meta charset="UTF-8">
+        <style>
+            #Body{
+                margin: auto;
+                min-width: 1200px;
+                max-width: 1200px;
+                text-align: center;
+            }
+            a{
+                color: #003E7D;
+            }
+            a:hover{
+                color: #FF7F00;
+            }
+            a:link {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Body">
+            <div id="Header" style="height: 186px;background: #ffffff">
+                <img src="a1.png" style="float: left;">
+                <div style="float: right;height: 72px">
+                    <p style="margin-top: 8px;margin-bottom: 8px"><span>关于我们  |  ENGLISH</span></p>
+                    <input placeholder="请输入关键字">
+                </div>
+                <div style="height: 50px;width: 1200px;background: #E7E8EB;position: absolute;top: 100px">
+                    <div style="text-align: center;float: left;width: 80px;height: 50px;line-height: 50px"><a href="http://www.neea.edu.cn/" target="_blank" rel="noopener">首页</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="http://www.neea.edu.cn/html1/folder/16093/614-1.htm" target="_blank" rel="noopener">考试资讯</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="http://www.neea.edu.cn/html1/category/1508/151-1.htm" target="_blank" rel="noopener">公示公告</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="http://www.neea.edu.cn/html1/folder/16103/1271-1.htm" target="_blank" rel="noopener">考试项目</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="http://www.neea.edu.cn/html1/folder/1607/298-1.htm" target="_blank" rel="noopener">考试报名</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="#" style="color: #FF7F00">成绩查询</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="http://zscx.neea.edu.cn/" target="_blank" rel="noopener">证书查询</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="http://www.neea.edu.cn/html1/category/16093/830-1.htm" target="_blank" rel="noopener">考试研究</a></div>
+                    <div style="text-align: center;float: left;width: 140px;height: 50px;line-height: 50px"><a href="http://wenjuanba.com/ks" target="_blank" rel="noopener">高考问卷调查</a></div>
+                </div>
+                <div style="height: 50px;width: 1200px;position: absolute;top: 150px;text-align: left;line-height: 40px">
+                    首页>成绩查询
+                    <hr>
+                </div>
+            </div>
+            <div id="Content">
+                <div id="Content1">
+                    <h1 style="text-align: center">2018全国法律职业资格考试成绩查询</h1><br>
+                    <div style="width: 400px;margin:auto;margin-left: 350px">
+                        <input id="s1" type="text" style="width: 200px;float: right"><span style="width: 100px;float: left;position:absolute;margin-bottom:21px">准考证号：</span><br><br>
+                        <input id="s2" type="text" style="width: 200px;float: right"><span style="width: 100px;float: left;position:absolute;margin-bottom:21px">姓名：</span><br><br>
+                        <input id="s3" type="text" style="width: 200px;float: right"><span style="width: 100px;float: left;position:absolute;margin-bottom:21px">证件号：</span><br><br>
+                        <span id="ab" style="width: 100px;float: right;text-align: center;background: #00b8d4;">8+8</span><input id="s4" type="text" style="width: 100px;float: right"><span style="width: 100px;float: left;position:absolute;margin-bottom:21px">验证码：</span><br><br>
+                        <input id="s5" type="button" onclick="f()" style="width: 100px;margin-left: 100px" value="查询">
+                    </div>
+                    <script>
+                        document.getElementById("Content1").style.height=document.documentElement.clientHeight-297+"px";
+                        var a=Math.round(Math.random()*10);
+                        var b=Math.round(Math.random()*10);
+                        document.getElementById("ab").innerHTML=a+"+"+b;
+                        function f() {
+                            var s1=document.getElementById("s1").value;
+                            var s2=document.getElementById("s2").value;
+                            var s3=document.getElementById("s3").value;
+                            var s4=document.getElementById("s4").value;
+                            if(s4==(a+b)){
+                                if(s1=="1"&&s2=="2"&&s3=="3"){
+                                    window.location.replace("query.html")
+                                }else{
+                                    alert("查询为空");
+                                }
+                            }else{
+                                location.reload();
+                            }
+                        }
+
+                    </script>
+                </div>
+                <div id="Content3"></div>
+                <div id="Content2"></div>
+            </div>
+            <div id="Footer">
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tony-greel.github.io/"/>
-  <updated>2018-08-08T02:58:32.372Z</updated>
+  <updated>2018-08-20T02:47:46.049Z</updated>
   <id>https://tony-greel.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android随笔-动画（转场动画 &amp; 共享元素）</title>
+    <link href="https://tony-greel.github.io/2018/08/13/Android%E9%9A%8F%E7%AC%94-%E5%8A%A8%E7%94%BB(%E8%BD%AC%E5%9C%BA%E5%8A%A8%E7%94%BB%20&amp;%20%E5%85%B1%E4%BA%AB%E5%85%83%E7%B4%A0)/"/>
+    <id>https://tony-greel.github.io/2018/08/13/Android随笔-动画(转场动画 &amp; 共享元素)/</id>
+    <published>2018-08-13T01:02:25.000Z</published>
+    <updated>2018-08-20T02:47:46.049Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h4 id="一-前言："><a href="#一-前言：" class="headerlink" title="一.前言："></a>一.前言：</h4></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;h4 id=&quot;一-前言：&quot;&gt;&lt;a href=&quot;#一-前言：&quot; class=&quot;headerlink&quot; title=&quot;一.前言：&quot;&gt;&lt;/a&gt;一.前言：&lt;/h4&gt;&lt;/blockquote&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Android随笔" scheme="https://tony-greel.github.io/categories/Android%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Android随笔-如何在子线程中更新UI</title>
